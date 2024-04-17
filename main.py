@@ -21,9 +21,13 @@ if args.transaction: # 개발예정
 
 if args.invest_amount is None:
     args.invest_amount = float(1e7)
+else:
+    args.invest_amount = float(args.invest_amount)
 
 if args.stock_number is None:
     args.stock_number = 25
+else:
+    args.stock_number = int(args.stock_number)
 
 if args.filepath is None:
     args.filepath = "data/"
